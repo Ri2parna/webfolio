@@ -1,5 +1,5 @@
 {
-  "name": "portfoliorituparna",
+  "name": "rituparnaportfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwind": "^4.0.0"
+    "tailwindcss": "^1.4.6"
   }
 }
