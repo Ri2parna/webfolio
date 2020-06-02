@@ -3,99 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rituparna ResPortfolioume</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./rough-notation.js"></script>
+    <title>Resume - web</title>
 </head>
-<body>
-    <!-- Name:Start -->
-    <div class="name">
-        <div>Logo</div>
-        <div>Rituparna Das</div>
-    </div>
-    <!-- Name:End -->
-    
-    <!-- Education:Start -->
-    <div>
-        <div>
-        Bachelor of Technology (B.Tech), Computer Science & Engineering 2017 - Ongoing
-        Tezpur Central University
-        </div>
-        <div>
-        XII (Senior Secondary), Science (2016)
-        AHSEC Board (CNB College.)
-        </div>
-    </div>
-    <!-- Education:End -->
-    <!-- Projects:Start -->
-    <div class="projects">
-        <div>
-        Protein Sequencer (Course Project)
-        Ongoing
-        https://git.io/JffYN
-        ● Converting Codon Sequences to Corresponding Acid Sequences.
-        ● Stored data using MongoDB and the plotting is done with matplotlib and bokeh.
-        </div>
-        <div>
-        TelegramBot to download instagram pictures and Youtube Videos
-        Feb 2020 - Present
-        https://git.io/JffYD
-        ● Python based bot to download YouTube videos whenever a link is sent to it.
-        ● Downloads the image of a public instagram post
-        </div>
-        <div>
-        Student Registration System (Course Project) (2019)
-        https://git.io/Jfms4
-        ● Built a PHP based Student Registration System.
-        ● Used Html5,CSS,Bootstrap and open source templates for front end.
-        ● Stored records using a MySql Database.
-        </div>
-        <div>
-        Github Mate (Open Source Contribution) (2019)
-        https://git.io/JffOt
-        ● A web implementation of Github-mate Desktop app using the Flask web application
-        framework with extended capabilities.
-        ● The Web app displays the details about a github user using the github api.
-        </div>
-    </div>
+<body class="flex flex-wrap px-4 py-4 bg-green-400 md:px-20 lg:px-64 md:bg-gray-400 sm:bg-red-300">
 
-    <!-- Projects:End -->
-    <!-- CourseWork:Start -->
-    <div>
-        Introduction to Internet of Things ​ [Link to Credential]
-        Ranked among top 5% in a class of 7675 Students
-        DataStructures & Algorithms in Python
+<!-- Name:Start -->
+<section class="p-5 bg-gray-200 flex items-center sm:flex-row border-b w-full">
+    <!-- <img src="https://rituparna.herokuapp.com/static/logo.svg" alt="" class="w-4 lg:w-12"> -->
+    <div   class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
+          style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
+          <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">R</div>
+          <div class="text-center initial">D</div>
     </div>
-    
-    <!-- CourseWork:End -->
-    <!-- Positions of Interest:Start -->
-    <div>
-    ● Webmaster for the Entrepreneurship Cell Website of the University
-    ● Placement Co-Coordinator for the Computer Science Department for the 2021 Batch
-    ● Core Member of CRY - Tezpur University (NGO) for 2018
-    </div>
-    <!-- Positions of Interest:End -->
-    <!-- Achievements:Start -->
-    <div>
-    ● One of the thirty finalist teams, Startup India Assam Yatra (2019)
-    ● Bronze, University Writing Competition (2019)
-    </div>
-    <!-- Achievements:End -->
-    <!-- Skills:Start -->
-    <div>
-    Programming Languages​ : ​ Proficient:​ Python, C , SQL, Web-Development
-    Competent​ : Java, C++
-    </div>
-    <!-- Skills:End -->
-    <!-- Other:Start -->
-    <!-- Other:End -->
-    <!-- Contact:Start -->
-    <div>
-    Kaziranga, Assam, India
-    ri2parna@outlook.com
-    +91 8761980805
-    rituparna-das
-    rituparna.now.sh
-    </div>
-    <!-- Contact:End -->
-    
+    <article class="mx-4 text-base text-3xl">Rituparna Das</article>
+</section>
+<!-- Name:End -->
+
+<!-- Education:Start -->
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r w-full">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Education</article>
+    <article class="p-1 my-2">
+    <ul>
+        <li class="font-bold">Tezpur Central University</li>
+        <li class="font-hairline text-gray-700">2017 - 2021 | Bachelor's Degree (Btech.) in Computer Science & Engineering </li>
+    </ul>
+    <ul>
+        <li class="font-bold">CNB College</li>
+        <li class="font-hairline text-gray-700">2014 - 2016 | XII (Senior Secondary), Science (2016)</li>
+    </ul>
+    </article>
+</section>
+<!-- Education:End -->
+
+<!-- Contact:Start -->
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r flex-grow">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Contact</article>
+    <article class="p-1 my-2">
+    <ul>
+        <li>Kaziranga, Assam, India</li>
+        <li><a href="mailto:ri2parna@outlook.com">ri2parna@outlook.com ↗</a></li>
+        <li>+91 8761980805</li>
+        <rough-notation showOnLoad type="highlight" color="green" order="1">
+            <li><a id="linkd" href="http://" target="_blank" rel="noopener noreferrer">rituparna.now.sh ↗</a></li>
+        </rough-notation>
+    </ul>
+    </article>
+</section>
+<!-- Contact:End -->
+
+<!-- CourseWork:Start -->
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r flex-grow">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Course Work</article>
+    <article class="p-1 my-2">
+        <ol>
+        <li class="font-bold">Introduction to Internet of Things</li>
+        <li class="font-hairline text-gray-700"> ● Ranked among top 5% in a class of 7675 Students</li>
+        <li class="font-bold">DataStructures & Algorithms in Python</li>
+        </ol>
+    </article>
+</section>
+<!-- CourseWork:End -->
+
+ <!-- Positions of Interest:Start -->
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r self-stretch w-full">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Positions of Interest</article>
+    <article class="p-1 my-2">
+    <ol>
+        <li class="font-hairline text-gray-800">Placement Co-Coordinator for the Computer Science Department for the 2021 Batch</li>
+        <li class="font-hairline text-gray-800">Webmaster for the Entrepreneurship Cell Website of the University</li>
+        <li class="font-hairline text-gray-800">Core Member of CRY - Tezpur University (NGO) for 2018</li>
+    </ol>
+    </article>
+</section>
+<!-- Positions of Interest:End -->
+
+<!-- Projects: Start -->
+<section class="bg-gray-200 p-4 border-b border-r self-stretch w-full">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Projects</article>
+    <article class="p-1 my-2">
+        <article class="font-semibold text-gray-900">Protein Sequencer (Course Project) ↗</article>
+        <article class="p-1 my-2">
+        <ol>
+        <li class="font-hairline text-gray-700">Ongoing</li>
+        <li class="font-hairline text-gray-700">https://git.io/JffYN</li>
+        <li class="font-hairline text-gray-700">Converting Codon Sequences to Corresponding Acid Sequences.</li>
+        <li class="font-hairline text-gray-700">Stored data using MongoDB and the plotting is done with matplotlib and bokeh.</li>
+        </ol>
+        </article>
+        <article class="font-semibold text-gray-900">TelegramBot to download instagram pictures and Youtube Videos ↗</article>
+        <article class="p-1 my-2">
+        <ol>
+            <li class="font-hairline text-gray-700">Feb 2020 - Present</li>
+            <li class="font-hairline text-gray-700">https://git.io/JffYD</li>
+            <li class="font-hairline text-gray-700">Python based bot to download YouTube videos whenever a link is sent to it.</li>
+            <li class="font-hairline text-gray-700">Downloads the image of a public instagram post</li>
+        </ol>
+        </article>
+        <article class="font-semibold text-gray-900">Student Registration System (Course Project) (2019) ↗</article>
+        <article class="p-1 my-2">
+        <ol>
+            <li class="font-hairline text-gray-700">https://git.io/Jfms4</li>
+            <li class="font-hairline text-gray-700">Built a PHP based Student Registration System.</li>
+            <li class="font-hairline text-gray-700">Used Html5,CSS,Bootstrap and open source templates for front end.</li>
+            <li class="font-hairline text-gray-700">Stored records using a MySql Database.</li>
+        </ol>
+        </article>
+        <article>
+        <article class="font-semibold text-gray-900">Github Mate (Open Source Contribution) (2019) ↗</article>
+        <article class="p-1 my-2">
+        <ol>
+        <li class="font-hairline text-gray-700">https://git.io/JffOt</li>
+        <li class="font-hairline text-gray-700">A web implementation of Github-mate Desktop app using the Flask web application</li>
+        <li class="font-hairline text-gray-700">framework with extended capabilities.</li>
+        <li class="font-hairline text-gray-700">The Web app displays the details about a github user using the github api.</li>
+        </ol>
+        </article>
+        </article>
+    </article>
+</section>
+<!-- Projects:End -->
+
+<!-- Achievements:Start -->
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r w-full">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Achievements</article>
+        <article class="p-1 my-2">
+            <ol>
+                <li class="font-hairline text-gray-700">One of the thirty finalist teams, Startup India Assam Yatra (2019)</li>
+                <li class="font-hairline text-gray-700">Bronze, University Writing Competition (2019)</li>
+            </ol>
+        </article>
+    </article>
+</section>
+<!-- Achievements:End -->
+
+<!-- Skills:Start -->
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r w-full">
+    <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Skills</article>
+    <article class="font-hairline text-gray-700">Programming Languages​ :</article>
+    <article class="p-1 my-1">
+        <ol>
+            <li class="font-hairline text-gray-700">Proficient:​ Python, C , SQL, Web-Development</li>
+            <li class="font-hairline text-gray-700">Competent​ : Java, C++</li>
+        </ol>
+    </article>
+</section>
+<!-- Skills:End -->
+
 </body>
 </html>
