@@ -7,7 +7,7 @@
     <script src="./rough-notation.js"></script>
     <title>Resume - web</title>
 </head>
-<body class="flex flex-wrap px-4 py-4 md:px-20 lg:px-64 md:bg-gray-400 sm:bg-red-300">
+<body class="flex flex-wrap px-4 py-4 md:px-20 lg:px-64 md:bg-gray-400">
 
 <!-- Name:Start -->
 <section class="p-5 bg-gray-200 flex items-center sm:flex-row border-b w-full">
@@ -22,7 +22,7 @@
 <!-- Name:End -->
 
 <!-- Education:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b md:border-r w-full">
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r w-full">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Education</article>
     <article class="p-1 my-2">
     <ul>
@@ -38,7 +38,7 @@
 <!-- Education:End -->
 
 <!-- Contact:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r flex-grow">
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r flex-grow">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Contact</article>
     <article class="p-1 my-2">
     <ul>
@@ -54,7 +54,7 @@
 <!-- Contact:End -->
 
 <!-- CourseWork:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r flex-grow">
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r flex-grow">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Course Work</article>
     <article class="p-1 my-2">
         <ol>
@@ -67,7 +67,7 @@
 <!-- CourseWork:End -->
 
  <!-- Positions of Interest:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r self-stretch w-full">
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r self-stretch w-full">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Positions of Interest</article>
     <article class="p-1 my-2">
     <ol>
@@ -80,7 +80,7 @@
 <!-- Positions of Interest:End -->
 
 <!-- Projects: Start -->
-<section class="bg-gray-200 p-4 border-b border-r self-stretch w-full">
+<section class="bg-gray-200 p-4 border-b lg:border-r self-stretch w-full">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Projects</article>
     <article class="p-1 my-2">
         <article class="font-semibold text-gray-900">Protein Sequencer (Course Project) ↗</article>
@@ -126,7 +126,7 @@
 <!-- Projects:End -->
 
 <!-- Achievements:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r w-full">
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r w-full">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Achievements</article>
         <article class="p-1 my-2">
             <ol>
@@ -139,13 +139,26 @@
 <!-- Achievements:End -->
 
 <!-- Skills:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b border-r w-full">
+<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r w-full">
     <article class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Skills</article>
     <article class="font-hairline text-gray-700">Programming Languages​ :</article>
-    <article class="p-1 my-1">
+    <article class="p-1 my-1 leading-loose">
         <ol>
-            <li class="font-hairline text-gray-700">Proficient:​ Python, C , SQL, Web-Development</li>
-            <li class="font-hairline text-gray-700">Competent​ : Java, C++</li>
+            <li class="font-hairline text-gray-700">
+                <span>Proficient: </span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Python</span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C</span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">JavaScript</span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Web-Development</span>
+            </li>
+        </ol>
+        <ol>
+            <li class="font-hairline text-gray-700">
+                <span >Competent: </span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Java</span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C++</span>
+                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">SQL</span>
+            </li>
         </ol>
     </article>
 </section>
