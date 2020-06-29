@@ -1,14 +1,17 @@
 {
-  "name": "rituparnaportfolio",
-  "version": "1.0.0",
+  "name": " ",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "keywords": "",
+  "license": "",
+  "author": "",
   "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^1.4.6"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
