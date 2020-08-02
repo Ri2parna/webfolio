@@ -17,13 +17,43 @@
         .font-firago {
             font-family: FiraGO, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
+        
+        @media print {
+            main {
+                flex-direction: column;
+            }
+            main :nth-child(1) {
+                order: 0;
+            }
+            main :nth-child(2) {
+                order: 3;
+            }
+            main :nth-child(3) {
+                order: 1;
+            }
+            main :nth-child(4) {
+                order: 4;
+            }
+            main :nth-child(5) {
+                order: 2;
+            }
+            main :nth-child(6) {
+                order: 4;
+            }
+            main :nth-child(7) {
+                order: 4;
+            }
+            main :nth-child(8) {
+                order: 4;
+            }
+        }
     </style>
 </head>
 
 <body class="print:bg-white print:min-h-screen subpixel-antialiased">
-    <main class="font-firago flex px-3 py-3 md:px-20 lg:px-64 print:px-10 flex-wrap md:bg-gray-400">
+    <main class="font-firago flex flex-wrap px-3 py-3 bg-gray-400 md:px-20 lg:px-64 print:px-10 print:bg-white">
         <!-- Name:Start -->
-        <section class="p-5 bg-gray-200 print:bg-white flex items-center sm:flex-row print:border-none border-b w-full">
+        <section class="bg-gray-200 p-4 flex items-center sm:flex-row border-b w-full print:bg-white">
             <div class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3" style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
                 <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">R</div>
                 <div class="text-center initial">D</div>
@@ -33,7 +63,7 @@
         <!-- Name:End -->
 
         <!-- Education:Start -->
-        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b lg:border-r w-full">
+        <section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r w-full print:bg-white print:border-none">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Education</h1>
             <div class="p-1 my-2">
                 <ul>
@@ -49,7 +79,7 @@
         <!-- Education:End -->
 
         <!-- Contact:Start -->
-        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b flex-grow sm:border-r md:print:border-none border-b">
+        <section class="bg-gray-200 p-4 lg:w-6/12 border-b flex-grow sm:border-r md border-b print:bg-white print:border-none">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Contact</h1>
             <div class="p-1 my-2">
                 <ul>
@@ -63,7 +93,7 @@
         <!-- Contact:End -->
 
         <!-- CourseWork:Start -->
-        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b lg:border-r flex-grow">
+        <section class="bg-gray-200 p-4 lg:w-6/12 print:w-full border-b lg:border-r flex-grow print:bg-white print:border-none">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Course Work</h1>
             <div class="p-1 my-2">
                 <ol>
@@ -76,25 +106,25 @@
         <!-- CourseWork:End -->
 
         <!-- Skills:Start -->
-        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b w-full">
+        <section class="bg-gray-200 p-4 lg:w-6/12 print:w-full print:order-1 border-b w-full print:bg-white print:border-none">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Skills</h1>
             <h2 class="font-normal text-gray-700">Programming Languages​ :</h2>
             <div class="p-1 my-1 leading-loose">
                 <ol>
                     <li class="font-normal text-gray-700">
                         <span>Proficient: </span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Python</span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C</span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Web-Development</span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">JavaScript</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">Python</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">C</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">Web-Development</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">JavaScript</span>
                     </li>
                 </ol>
                 <ol>
                     <li class="font-normal text-gray-700">
                         <span>Competent: </span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Java</span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C++</span>
-                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">SQL</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">Java</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">C++</span>
+                        <span class="bg-gray-500 print:bg-gray-100 bg-opacity-50 p-1 rounded-sm">SQL</span>
                     </li>
                 </ol>
             </div>
@@ -102,7 +132,7 @@
         <!-- Skills:End -->
 
         <!-- Projects: Start -->
-        <section class="bg-gray-200 print:bg-white p-4 print:border-none border-b self-stretch w-full">
+        <section class="bg-gray-200 p-4 border-b self-stretch w-full print:bg-white print:border-none">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Projects</h1>
             <div class="p-1 my-2">
                 <div class="font-semibold text-gray-900">
@@ -153,7 +183,7 @@
         <!-- Projects:End -->
 
         <!-- Achievements:Start -->
-        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 sm:border-r w-full print:border-none border-b">
+        <section class="bg-gray-200 p-4 lg:w-6/12 sm:border-r w-full border-b print:bg-white print:border-none">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Achievements</h1>
             <div class="p-1 my-2">
                 <ol class="font-normal text-gray-700 text-gray-700">
@@ -165,7 +195,7 @@
         <!-- Achievements:End -->
 
         <!-- Positions of Interest:Start -->
-        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 self-stretch w-full">
+        <section class="bg-gray-200 p-4 lg:w-6/12 self-stretch w-full print:bg-white">
             <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Positions of Interest</h1>
             <div class="p-1 my-2">
                 <ol class="font-normal text-gray-800">
