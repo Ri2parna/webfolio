@@ -1,169 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-Stack Developer, Software development engineer">
+    <meta name="keywords" content="resume,cv,Rituparna Das">
+    <meta name="author" content="Rituparna Das">
     <meta name="robots" content="noindex">
-    <!-- <link href="./styles.css" rel="stylesheet"> -->
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Resume - web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./build.css">
+    <link href="./fira-go.css" rel="stylesheet">
+    <title>Rituparna - Resume</title>
+    <style>
+        .font-firago {
+            font-family: FiraGO, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
 </head>
-<body>
-<article class="flex flex-wrap px-4 py-4 md:px-20 lg:px-64 print:px-1 md:bg-gray-400 print:border-2">
-<!-- Name:Start -->
-<section class="p-5 bg-gray-200 flex items-center sm:flex-row border-b w-full">
-    <div class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3" style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
-          <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">R</div>
-          <div class="text-center initial">D</div>
-    </div>
-    <h1 class="mx-4 text-base text-3xl">Rituparna Das</h1>
-</section>
-<!-- Name:End -->
 
-<!-- Education:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r w-full">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Education</h1>
-    <div class="p-1 my-2">
-    <ul>
-        <li class="font-bold">Tezpur Central University</li>
-        <li class="font-normal text-gray-700">2017 - 2021 | Bachelor's Degree (Btech.) in Computer Science & Engineering </li>
-    </ul>
-    <ul>
-        <li class="font-bold">CNB College</li>
-        <li class="font-normal text-gray-700">2014 - 2016 | XII (Senior Secondary), Science (2016)</li>
-    </ul>
-    </div>
-</section>
-<!-- Education:End -->
+<body class="print:bg-white print:min-h-screen subpixel-antialiased">
+    <main class="font-firago flex px-3 py-3 md:px-20 lg:px-64 print:px-10 flex-wrap md:bg-gray-400">
+        <!-- Name:Start -->
+        <section class="p-5 bg-gray-200 print:bg-white flex items-center sm:flex-row print:border-none border-b w-full">
+            <div class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3" style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
+                <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">R</div>
+                <div class="text-center initial">D</div>
+            </div>
+            <h1 class="mx-4 text-base text-3xl font-medium">Rituparna Das</h1>
+        </section>
+        <!-- Name:End -->
 
-<!-- Contact:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b flex-grow sm:border-r md:border-b">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Contact</h1>
-    <div class="p-1 my-2">
-    <ul>
-        <li>Kaziranga, Assam, India</li>
-        <li><a href="mailto:ri2parna@outlook.com" class="hover:text-gray-600">ri2parna@outlook.com ↗</a></li>
-        <li>+91 8761980805</li>
-        <li><a id="linkd" href="https://rituparna.now.sh" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600">rituparna.now.sh ↗</a></li>
-    </ul>
-    </div>
-</section>
-<!-- Contact:End -->
+        <!-- Education:Start -->
+        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b lg:border-r w-full">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Education</h1>
+            <div class="p-1 my-2">
+                <ul>
+                    <li class="font-medium">Tezpur Central University</li>
+                    <li class="font-normal text-gray-700">2017 - 2021 | Bachelor's Degree (Btech.) in Computer Science & Engineering </li>
+                </ul>
+                <ul>
+                    <li class="font-medium">CNB College</li>
+                    <li class="font-normal text-gray-700">2014 - 2016 | XII (Senior Secondary), Science (2016)</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Education:End -->
 
-<!-- CourseWork:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b lg:border-r flex-grow">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Course Work</h1>
-    <div class="p-1 my-2">
-        <ol>
-        <li class="font-bold">Introduction to Internet of Things</li>
-        <li class="font-normal text-gray-700"> ● Ranked among top 5% in a class of 7675 Students</li>
-        <li class="font-bold">DataStructures & Algorithms in Python</li>
-        </ol>
-    </div>
-</section>
-<!-- CourseWork:End -->
+        <!-- Contact:Start -->
+        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b flex-grow sm:border-r md:print:border-none border-b">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Contact</h1>
+            <div class="p-1 my-2">
+                <ul>
+                    <li>Kaziranga, Assam, India</li>
+                    <li><a href="mailto:ri2parna@outlook.com" class="hover:text-gray-600">ri2parna@outlook.com ↗</a></li>
+                    <li>+91 8761980805</li>
+                    <li><a id="linkd" href="https://rituparna.now.sh" target="_blank" rel="noopener noreferrer" class="hover:text-gray-600">rituparna.now.sh ↗</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Contact:End -->
 
-<!-- Skills:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 border-b w-full">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Skills</h1>
-    <h2 class="font-normal text-gray-700">Programming Languages​ :</h2>
-    <div class="p-1 my-1 leading-loose">
-        <ol>
-            <li class="font-normal text-gray-700">
-                <span>Proficient: </span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Python</span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C</span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Web-Development</span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">JavaScript</span>
-            </li>
-        </ol>
-        <ol>
-            <li class="font-normal text-gray-700">
-                <span >Competent: </span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Java</span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C++</span>
-                <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">SQL</span>
-            </li>
-        </ol>
-    </div>
-</section>
-<!-- Skills:End -->
+        <!-- CourseWork:Start -->
+        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b lg:border-r flex-grow">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Course Work</h1>
+            <div class="p-1 my-2">
+                <ol>
+                    <li class="font-medium print:font-normal">Introduction to Internet of Things</li>
+                    <li class="font-normal text-gray-700"> ● Ranked among top 5% in a class of 7675 Students</li>
+                    <li class="font-medium print:font-normal">DataStructures & Algorithms in Python</li>
+                </ol>
+            </div>
+        </section>
+        <!-- CourseWork:End -->
 
-<!-- Projects: Start -->
-<section class="bg-gray-200 p-4 border-b self-stretch w-full">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Projects</h1>
-    <div class="p-1 my-2">
-        <div class="font-semibold text-gray-900">
-        <a href="https://git.io/JffYN" class="hover:underline ">Protein Sequencer (Course Project)</a>↗
-        </div>
-        <div class="p-1 my-2">
-        <ol class="font-normal text-gray-700">
-        <li>Ongoing</li>
-        <li>Converting Codon Sequences to Corresponding Acid Sequences.</li>
-        <li>Stored data using MongoDB and the plotting is done with matplotlib and bokeh.</li>
-        </ol>
-        </div>
-        <div class="font-semibold text-gray-900">
-            <a href="https://git.io/JffYD" class="hover:underline" target="_blank" rel="noopener noreferrer">TelegramBot to download instagram pictures and Youtube Videos</a>↗
-        </div>
-        <div class="p-1 my-2">
-        <ol>
-            <li class="font-normal text-gray-700">Feb 2020 - Present</li>
-            <li class="font-normal text-gray-700"></li>
-            <li class="font-normal text-gray-700">Python based bot to download YouTube videos whenever a link is sent to it.</li>
-            <li class="font-normal text-gray-700">Downloads the image of a public instagram post</li>
-        </ol>
-        </div>
-        <div class="font-semibold text-gray-900">
-            <a href="https://git.io/Jfms4" class="hover:underline">Student Registration System (Course Project) (2019)</a>↗
-        </div>
-        <div class="p-1 my-2">
-        <ol>
-            <li class="font-normal text-gray-700">Built a PHP based Student Registration System.</li>
-            <li class="font-normal text-gray-700">Used Html5,CSS,Bootstrap and open source templates for front end.</li>
-            <li class="font-normal text-gray-700">Stored records using a MySql Database.</li>
-        </ol>
-        </div>
-        <div>
-        <div class="font-semibold text-gray-900">
-            <a href="https://git.io/JffOt" class="hover:underline">Github Mate (Open Source Contribution) (2019) </a>↗
-        </div>
-        <div class="p-1 my-2">
-        <ol class="font-normal text-gray-700">
-        <li>A web implementation of Github-mate Desktop app using the Flask web application</li>
-        <li>framework with extended capabilities.</li>
-        <li>The Web app displays the details about a github user using the github api.</li>
-        </ol>
-        </div>
-        </div>
-    </div>
-</section>
-<!-- Projects:End -->
+        <!-- Skills:Start -->
+        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 print:border-none border-b w-full">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Skills</h1>
+            <h2 class="font-normal text-gray-700">Programming Languages​ :</h2>
+            <div class="p-1 my-1 leading-loose">
+                <ol>
+                    <li class="font-normal text-gray-700">
+                        <span>Proficient: </span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Python</span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C</span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Web-Development</span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">JavaScript</span>
+                    </li>
+                </ol>
+                <ol>
+                    <li class="font-normal text-gray-700">
+                        <span>Competent: </span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">Java</span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">C++</span>
+                        <span class="bg-gray-500 bg-opacity-50 p-1 rounded-sm">SQL</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- Skills:End -->
 
-<!-- Achievements:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 sm:border-r w-full border-b">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Achievements</h1>
-        <div class="p-1 my-2">
-            <ol class="font-normal text-gray-700 text-gray-700">
-                <li>One of the thirty finalist teams, Startup India Assam Yatra (2019)</li>
-                <li>Bronze, University Writing Competition (2019)</li>
-            </ol>
-        </div>
-</section>
-<!-- Achievements:End -->
+        <!-- Projects: Start -->
+        <section class="bg-gray-200 print:bg-white p-4 print:border-none border-b self-stretch w-full">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Projects</h1>
+            <div class="p-1 my-2">
+                <div class="font-semibold text-gray-900">
+                    <a href="https://git.io/JffYN" class="hover:underline ">Protein Sequencer (Course Project)</a>↗
+                </div>
+                <div class="p-1 my-2">
+                    <ol class="font-normal text-gray-700">
+                        <li>Ongoing</li>
+                        <li>Converting Codon Sequences to Corresponding Acid Sequences.</li>
+                        <li>Stored data using MongoDB and the plotting is done with matplotlib and bokeh.</li>
+                    </ol>
+                </div>
+                <div class="font-semibold text-gray-900">
+                    <a href="https://git.io/JffYD" class="hover:underline" target="_blank" rel="noopener noreferrer">TelegramBot to download instagram pictures and Youtube Videos</a>↗
+                </div>
+                <div class="p-1 my-2">
+                    <ol>
+                        <li class="font-normal text-gray-700">Feb 2020 - Present</li>
+                        <li class="font-normal text-gray-700"></li>
+                        <li class="font-normal text-gray-700">Python based bot to download YouTube videos whenever a link is sent to it.</li>
+                        <li class="font-normal text-gray-700">Downloads the image of a public instagram post</li>
+                    </ol>
+                </div>
+                <div class="font-semibold text-gray-900">
+                    <a href="https://git.io/Jfms4" class="hover:underline">Student Registration System (Course Project) (2019)</a>↗
+                </div>
+                <div class="p-1 my-2">
+                    <ol>
+                        <li class="font-normal text-gray-700">Built a PHP based Student Registration System.</li>
+                        <li class="font-normal text-gray-700">Used Html5,CSS,Bootstrap and open source templates for front end.</li>
+                        <li class="font-normal text-gray-700">Stored records using a MySql Database.</li>
+                    </ol>
+                </div>
+                <div>
+                    <div class="font-semibold text-gray-900">
+                        <a href="https://git.io/JffOt" class="hover:underline">Github Mate (Open Source Contribution) (2019) </a>↗
+                    </div>
+                    <div class="p-1 my-2">
+                        <ol class="font-normal text-gray-700">
+                            <li>A web implementation of Github-mate Desktop app using the Flask web application</li>
+                            <li>framework with extended capabilities.</li>
+                            <li>The Web app displays the details about a github user using the github api.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects:End -->
 
-<!-- Positions of Interest:Start -->
-<section class="bg-gray-200 p-4 lg:w-6/12 self-stretch w-full">
-    <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl">Positions of Interest</h1>
-    <div class="p-1 my-2">
-    <ol class="font-normal text-gray-800">
-        <li>Placement Co-Coordinator for the Computer Science Department for the 2021 Batch</li>
-        <li>Webmaster for the Entrepreneurship Cell Website of the University</li>
-        <li>Core Member of CRY - Tezpur University (NGO) for 2018</li>
-    </ol>
-    </div>
-</section>
-<!-- Positions of Interest:End -->
-</article>
+        <!-- Achievements:Start -->
+        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 sm:border-r w-full print:border-none border-b">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Achievements</h1>
+            <div class="p-1 my-2">
+                <ol class="font-normal text-gray-700 text-gray-700">
+                    <li>One of the thirty finalist teams, Startup India Assam Yatra (2019)</li>
+                    <li>Bronze, University Writing Competition (2019)</li>
+                </ol>
+            </div>
+        </section>
+        <!-- Achievements:End -->
+
+        <!-- Positions of Interest:Start -->
+        <section class="bg-gray-200 print:bg-white p-4 lg:w-6/12 self-stretch w-full">
+            <h1 class="text-indigo-400 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-xl font-medium">Positions of Interest</h1>
+            <div class="p-1 my-2">
+                <ol class="font-normal text-gray-800">
+                    <li>Placement Co-Coordinator for the Computer Science Department for the 2021 Batch</li>
+                    <li>Webmaster for the Entrepreneurship Cell Website of the University</li>
+                    <li>Core Member of CRY - Tezpur University (NGO) for 2018</li>
+                </ol>
+            </div>
+        </section>
+        <!-- Positions of Interest:End -->
+    </main>
 </body>
+
 </html>
