@@ -14,7 +14,7 @@ const App = ({ Component, pageProps }) => (
       <meta name="author" content="Rituparna Das" />
       <meta name="robots" content="noindex" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <title>Rituparna - Resume</title>
     </Head>
     <div>
